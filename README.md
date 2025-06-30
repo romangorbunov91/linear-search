@@ -108,12 +108,12 @@ $$\begin{cases}
 
 С этой целью обозначим
 
-$$ F = \begin{bmatrix}
+$$ F = 
             \begin{aligned}
                 f(x_1) \\
                 f(x_2) \\
                 f(x_3)
-            \end{aligned}
+         
 \end{bmatrix}$$,
 
 $$P = \begin{bmatrix}
