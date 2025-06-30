@@ -108,13 +108,17 @@ $$\begin{cases}
 
 С этой целью обозначим
 
-$$ F = \left[
+$$ \begin{equation}
+
+
             \begin{aligned}
                 f(x_1) \\
                 f(x_2) \\
                 f(x_3)
             \end{aligned}
-\right]$$,
+
+
+\end{equation}$$,
 
 $$\begin{equation}
 P = \left[
