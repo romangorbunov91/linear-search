@@ -119,22 +119,26 @@ $$\begin{equation}
 \end{equation}$$
 
 
-$$\begin{equation}
-P = \left[
-            a \\
-            b \\
-            c
-        
-\right]
-\end{equation}$$,
 
-$$M_{sys} = \begin{bmatrix}
-                \begin{aligned}
-                    x_1^2 & x_1 & 1 \\
+$$\begin{equation}
+   P = \begin{bmatrix}
+    \begin{aligned}
+        a \\
+        b \\
+        c
+    \end{aligned}
+    \end{bmatrix}
+\end{equation}$$
+
+$$\begin{equation}
+   M_{sys} = \begin{bmatrix}
+    \begin{aligned}
+        x_1^2 & x_1 & 1 \\
                     x_2^2 & x_2 & 1 \\
                     x_3^2 & x_3 & 1
-                \end{aligned}
-\end{bmatrix}$$.
+    \end{aligned}
+    \end{bmatrix}
+\end{equation}$$
 
 Тогда, исходная система уравнений принимает вид
 
