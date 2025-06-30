@@ -118,11 +118,10 @@ $$ F = \left[
 
 $$\begin{equation}
 P = \begin{bmatrix}
-        \begin{aligned}
             a \\
             b \\
             c
-        \end{aligned}
+        
 \end{bmatrix}
 \end{equation}$$,
 
