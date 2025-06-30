@@ -114,7 +114,8 @@ $$\begin{equation}
         f(x_2) \\
         f(x_3)
     \end{aligned}
-\end{equation}$$,
+\end{equation}$$
+
 
 $$\begin{equation}
 P = \left[
