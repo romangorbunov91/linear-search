@@ -109,11 +109,13 @@ $$\begin{cases}
 С этой целью обозначим
 
 $$\begin{equation}
+    \begin{bmatrix}
     \begin{aligned}
         f(x_1) \\
         f(x_2) \\
         f(x_3)
     \end{aligned}
+    \end{bmatrix}
 \end{equation}$$
 
 
