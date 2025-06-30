@@ -109,7 +109,7 @@ $$\begin{cases}
 С этой целью обозначим
 
 $$\begin{equation}
-    \begin{bmatrix}
+   F = \begin{bmatrix}
     \begin{aligned}
         f(x_1) \\
         f(x_2) \\
