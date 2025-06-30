@@ -59,7 +59,7 @@ $$\begin{equation}
 $$\begin{equation}
     \begin{aligned}
         \lambda_k=b_k - \cfrac{b_k-a_k} {\varphi}, \\
-        \mu_k=a_k + (\cfrac{b_k-a_k} {\varphi},
+        \mu_k=a_k + \cfrac{b_k-a_k} {\varphi},
     \end{aligned}
 \end{equation}$$
 
@@ -89,13 +89,12 @@ $$\begin{equation}
 где ${F_n}$ - последовательность чисел Фибоначчи (${F_0=1}$).
 
 Реализация метода требует предварительного вычисления K-чисел Фибоначчи:
+
 $$\begin{equation}
     F_K > \cfrac{b-a}{\epsilon}.
 \end{equation}$$
 
 ### Метод парабол
-
-## Метод парабол
 
 Необходимо определить значения коэффициентов $a$, $b$, $c$ системы уравнений
 
@@ -109,25 +108,29 @@ $$\left\
 
 С этой целью обозначим
 
-$$F = \begin{bmatrix}
-            f(x_1) \\
-            f(x_2) \\
-            f(x_3)
+$$ F = \begin{bmatrix}
+            \begin{aligned}
+                f(x_1) \\
+                f(x_2) \\
+                f(x_3)
+            \end{aligned}
 \end{bmatrix}$$,
 
 $$P = \begin{bmatrix}
-a \\
-b \\
-c
+        \begin{aligned}
+            a \\
+            b \\
+            c
+        \end{aligned}
 \end{bmatrix}$$,
 
 $$M_{sys} = \begin{bmatrix}
-x_1^2 & x_1 & 1 \\
-x_2^2 & x_2 & 1 \\
-x_3^2 & x_3 & 1
+                \begin{aligned}
+                    x_1^2 & x_1 & 1 \\
+                    x_2^2 & x_2 & 1 \\
+                    x_3^2 & x_3 & 1
+                \end{aligned}
 \end{bmatrix}$$.
-
-$$ F = \begin{bmatrix} f(x_1) \\ f(x_2) \\ f(x_3) \end{bmatrix} $$
 
 Тогда, исходная система уравнений принимает вид
 
