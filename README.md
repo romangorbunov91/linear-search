@@ -58,8 +58,8 @@ $$\begin{equation}
 
 $$\begin{equation}
     \begin{aligned}
-        \lambda_k=b_k - (b_k-a_k)/ \varphi, \\
-        \mu_k=a_k + (b_k-a_k)/ \varphi,
+        \lambda_k=b_k - \cfrac{b_k-a_k} {\varphi}, \\
+        \mu_k=a_k + (\cfrac{b_k-a_k} {\varphi},
     \end{aligned}
 \end{equation}$$
 где ${\varphi=\frac{1+\sqrt(5)}{2}}$ - константа золотого сечения.
@@ -75,13 +75,16 @@ $$\begin{equation}
         \mu_k=a_k + \cfrac{F_{n-k+1}}{F_{n-k+2}} (b_k-a_k),
     \end{aligned}
 \end{equation}$$
+
 либо
+
 $$\begin{equation}
     \begin{aligned}
         \lambda_k=b_k - \cfrac{F_{n-k+1}}{F_{n-k+2}} (b_k-a_k), \\
         \mu_k=b_k - \cfrac{F_{n-k}}{F_{n-k+2}} (b_k-a_k),
     \end{aligned}
 \end{equation}$$
+
 где ${F_n}$ - последовательность чисел Фибоначчи (${F_0=1}$).
 
 Реализация метода требует предварительного вычисления K-чисел Фибоначчи:
@@ -122,6 +125,8 @@ x_1^2 & x_1 & 1 \\
 x_2^2 & x_2 & 1 \\
 x_3^2 & x_3 & 1
 \end{bmatrix}$$.
+
+$$ F = \begin{bmatrix} f(x_1) \\ f(x_2) \\ f(x_3) \end{bmatrix} $$
 
 Тогда, исходная система уравнений принимает вид
 
