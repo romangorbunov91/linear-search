@@ -62,6 +62,7 @@ $$\begin{equation}
         \mu_k=a_k + (\cfrac{b_k-a_k} {\varphi},
     \end{aligned}
 \end{equation}$$
+
 где ${\varphi=\frac{1+\sqrt(5)}{2}}$ - константа золотого сечения.
 
 Главным преимуществом метода золотого сечения, в сравнении с методом дихотомии, является в 2 раза меньшее вычисление значений функции: на каждой k-й итерации требуется вычислять всего одно значение функции.
@@ -98,20 +99,20 @@ $$\begin{equation}
 
 Необходимо определить значения коэффициентов $a$, $b$, $c$ системы уравнений
 
-$$\left\{
+$$\left\
 \begin{aligned}
-\bold{a} x_1^2 + \bold{b} x_1 + \bold{c} &= f(x_1), \\
-\bold{a} x_2^2 + \bold{b} x_2 + \bold{c} &= f(x_2), \\
-\bold{a} x_3^2 + \bold{b} x_3 + \bold{c} &= f(x_3)
+    \bold{a} x_1^2 + \bold{b} x_1 + \bold{c} &= f(x_1), \\
+    \bold{a} x_2^2 + \bold{b} x_2 + \bold{c} &= f(x_2), \\
+    \bold{a} x_3^2 + \bold{b} x_3 + \bold{c} &= f(x_3)
 \end{aligned}
 \right.$$
 
 С этой целью обозначим
 
 $$F = \begin{bmatrix}
-f(x_1) \\
-f(x_2) \\
-f(x_3)
+            f(x_1) \\
+            f(x_2) \\
+            f(x_3)
 \end{bmatrix}$$,
 
 $$P = \begin{bmatrix}
