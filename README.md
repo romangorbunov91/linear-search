@@ -116,8 +116,6 @@ $$\begin{equation}
     \end{bmatrix}
 \end{equation}$$
 
-
-
 $$\begin{equation}
    P = \begin{bmatrix}
         a \\
