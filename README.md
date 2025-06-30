@@ -98,7 +98,7 @@ $$\begin{equation}
 
 Необходимо определить значения коэффициентов $a$, $b$, $c$ системы уравнений
 
-$$\left{
+$$\left\{
 \begin{aligned}
     \mathbf{a} x_1^2 + \mathbf{b} x_1 + \mathbf{c} &= f(x_1), \\
     \mathbf{a} x_2^2 + \mathbf{b} x_2 + \mathbf{c} &= f(x_2), \\
