@@ -98,11 +98,11 @@ $$\begin{equation}
 
 Необходимо определить значения коэффициентов $a$, $b$, $c$ системы уравнений
 
-$$\left
+$$\left{
 \begin{aligned}
-    \bold{a} x_1^2 + \bold{b} x_1 + \bold{c} &= f(x_1), \\
-    \bold{a} x_2^2 + \bold{b} x_2 + \bold{c} &= f(x_2), \\
-    \bold{a} x_3^2 + \bold{b} x_3 + \bold{c} &= f(x_3)
+    \mathbf{a} x_1^2 + \mathbf{b} x_1 + \mathbf{c} &= f(x_1), \\
+    \mathbf{a} x_2^2 + \mathbf{b} x_2 + \mathbf{c} &= f(x_2), \\
+    \mathbf{a} x_3^2 + \mathbf{b} x_3 + \mathbf{c} &= f(x_3)
 \end{aligned}
 \right.$$
 
