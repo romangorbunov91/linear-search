@@ -102,19 +102,19 @@ $$\begin{cases}
 \begin{aligned}
     \mathbf{a} x_1^2 + \mathbf{b} x_1 + \mathbf{c} &= f(x_1), \\
     \mathbf{a} x_2^2 + \mathbf{b} x_2 + \mathbf{c} &= f(x_2), \\
-    \mathbf{a} x_3^2 + \mathbf{b} x_3 + \mathbf{c} &= f(x_3)
+    \mathbf{a} x_3^2 + \mathbf{b} x_3 + \mathbf{c} &= f(x_3).
 \end{aligned}
 \end{cases}$$
 
 С этой целью обозначим
 
-$$ F = 
+$$ F = \left[
             \begin{aligned}
                 f(x_1) \\
                 f(x_2) \\
                 f(x_3)
-         
-\end{bmatrix}$$,
+            \end{aligned}
+\right]$$,
 
 $$P = \begin{bmatrix}
         \begin{aligned}
