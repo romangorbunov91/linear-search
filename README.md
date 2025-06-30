@@ -110,11 +110,9 @@ $$\begin{cases}
 
 $$\begin{equation}
    F = \begin{bmatrix}
-    \begin{aligned}
         f(x_1) \\
         f(x_2) \\
         f(x_3)
-    \end{aligned}
     \end{bmatrix}
 \end{equation}$$
 
@@ -130,11 +128,9 @@ $$\begin{equation}
 
 $$\begin{equation}
    M_{sys} = \begin{bmatrix}
-    \begin{aligned}
         x_1^2 & x_1 & 1 \\
                     x_2^2 & x_2 & 1 \\
                     x_3^2 & x_3 & 1
-    \end{aligned}
     \end{bmatrix}
 \end{equation}$$
 
