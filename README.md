@@ -116,13 +116,15 @@ $$ F = \left[
             \end{aligned}
 \right]$$,
 
-$$P = \begin{bmatrix}
+$$\begin{equation}
+P = \begin{bmatrix}
         \begin{aligned}
             a \\
             b \\
             c
         \end{aligned}
-\end{bmatrix}$$,
+\end{bmatrix}
+\end{equation}$$,
 
 $$M_{sys} = \begin{bmatrix}
                 \begin{aligned}
