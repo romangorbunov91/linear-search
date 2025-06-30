@@ -117,12 +117,12 @@ $$ F = \left[
 \right]$$,
 
 $$\begin{equation}
-P = \begin{bmatrix}
+P = \left[
             a \\
             b \\
             c
         
-\end{bmatrix}
+\right]
 \end{equation}$$,
 
 $$M_{sys} = \begin{bmatrix}
