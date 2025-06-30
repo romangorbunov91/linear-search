@@ -22,13 +22,13 @@ $$\begin{equation}
     h=\frac{b-a}{N},
 \end{equation}$$
 
-$\begin{equation}
+$$\begin{equation}
     x_k=a+k\cdot h,
-\end{equation}$
+\end{equation}$$
 
-$\begin{equation}
+$$\begin{equation}
     f_k=f(x_k).
-\end{equation}$
+\end{equation}$$
 
 Среди N-значений функции выбирается наименьшее значение ${f_k=f_{min}}$ и определяется ${x^*}$, соответствующее ${f_{min}=f(x^*)}$.
 
@@ -37,31 +37,31 @@ $\begin{equation}
 ### Метод дихотомии
 Метод дихотомии основан на последовательном делении интервала неопределенности пополам с последующим вычислением значений функции в двух точках:
 
-$\begin{equation}
+$$\begin{equation}
     \begin{aligned}
         \lambda_k=\cfrac{a_k+b_k}{2} - \epsilon/2, \\
         \mu_k=\cfrac{a_k+b_k}{2} + \epsilon/2.
     \end{aligned}
-\end{equation}$
+\end{equation}$$
 
 Новые границы интервала неопределенности выбираются по правилу:
 
-$\begin{equation}
+$$\begin{equation}
     \begin{aligned}
         f(\lambda_k) > f(\mu_k) \rightarrow \left[\lambda_k;b_k\right], \\
         f(\lambda_k) < f(\mu_k) \rightarrow \left[a_k;\mu_k\right].
     \end{aligned}
-\end{equation}$
+\end{equation}$$
 
 ### Метод золотого сечения
 Деление интервала неопределенности выполняется в следующих пропорциях:
 
-$\begin{equation}
+$$\begin{equation}
     \begin{aligned}
         \lambda_k=b_k - (b_k-a_k)/ \varphi, \\
         \mu_k=a_k + (b_k-a_k)/ \varphi,
     \end{aligned}
-\end{equation}$
+\end{equation}$$
 где ${\varphi=\frac{1+\sqrt(5)}{2}}$ - константа золотого сечения.
 
 Главным преимуществом метода золотого сечения, в сравнении с методом дихотомии, является в 2 раза меньшее вычисление значений функции: на каждой k-й итерации требуется вычислять всего одно значение функции.
@@ -69,25 +69,25 @@ $\begin{equation}
 ### Метод Фибоначчи
 Деление интервала неопределенности выполняется в следующих пропорциях:
 
-$\begin{equation}
+$$\begin{equation}
     \begin{aligned}
         \lambda_k=a_k + \cfrac{F_{n-k}}{F_{n-k+2}} (b_k-a_k), \\
         \mu_k=a_k + \cfrac{F_{n-k+1}}{F_{n-k+2}} (b_k-a_k),
     \end{aligned}
-\end{equation}$
+\end{equation}$$
 либо
-$\begin{equation}
+$$\begin{equation}
     \begin{aligned}
         \lambda_k=b_k - \cfrac{F_{n-k+1}}{F_{n-k+2}} (b_k-a_k), \\
         \mu_k=b_k - \cfrac{F_{n-k}}{F_{n-k+2}} (b_k-a_k),
     \end{aligned}
-\end{equation}$
+\end{equation}$$
 где ${F_n}$ - последовательность чисел Фибоначчи (${F_0=1}$).
 
 Реализация метода требует предварительного вычисления K-чисел Фибоначчи:
-$\begin{equation}
+$$\begin{equation}
     F_K > \cfrac{b-a}{\epsilon}.
-\end{equation}$
+\end{equation}$$
 
 ### Метод парабол
 
@@ -95,33 +95,33 @@ $\begin{equation}
 
 Необходимо определить значения коэффициентов $a$, $b$, $c$ системы уравнений
 
-$\left\{
+$$\left\{
 \begin{aligned}
 \bold{a} x_1^2 + \bold{b} x_1 + \bold{c} &= f(x_1), \\
 \bold{a} x_2^2 + \bold{b} x_2 + \bold{c} &= f(x_2), \\
 \bold{a} x_3^2 + \bold{b} x_3 + \bold{c} &= f(x_3)
 \end{aligned}
-\right.$
+\right.$$
 
 С этой целью обозначим
 
-$F = \begin{bmatrix}
+$$F = \begin{bmatrix}
 f(x_1) \\
 f(x_2) \\
 f(x_3)
-\end{bmatrix}$,
+\end{bmatrix}$$,
 
-$P = \begin{bmatrix}
+$$P = \begin{bmatrix}
 a \\
 b \\
 c
-\end{bmatrix}$,
+\end{bmatrix}$$,
 
-$M_{sys} = \begin{bmatrix}
+$$M_{sys} = \begin{bmatrix}
 x_1^2 & x_1 & 1 \\
 x_2^2 & x_2 & 1 \\
 x_3^2 & x_3 & 1
-\end{bmatrix}$.
+\end{bmatrix}$$.
 
 Тогда, исходная система уравнений принимает вид
 
@@ -129,9 +129,9 @@ ${M_{sys} \cdot P = F}$.
 
 Новое приближение:
 
-$\begin{equation}
+$$\begin{equation}
     x_k = - \cfrac{b}{2a}.
-\end{equation}$
+\end{equation}$$
 
 Данный метод склонен к биениям (относится к нестабильным) и неэффективен при минимизации функций с участками плато.
 
@@ -139,9 +139,9 @@ $\begin{equation}
 
 Вычисления начинаются методом парабол. Поиск новых приближений выполняется до тех пор, пока
 
-$\begin{equation}
+$$\begin{equation}
     \left| x_k - x_{k-1} \right| < \cfrac{\left| x_{k-1} - x_{k-2} \right|}{2}.
-\end{equation}$
+\end{equation}$$
 
 Затем алгоритм переключается на метод золотого сечения.
 
