@@ -187,15 +187,6 @@ $$\begin{equation}
 
 ## Приложение с таблицами
 
-
-
-
-
-
-
-
-
-
 <!-- START_X_OPTIM_F_UNIMOD --> 
 ### Таблица оптимальных значений (унимодальная функция)
 |    eps |   dihotom |   golden |   fibonacci |   parabol |   brent |
